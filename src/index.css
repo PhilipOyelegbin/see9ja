@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth; 
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+@layer base {
+  li {
+    @apply text-lg mx-3 hover:text-green;
+  }
+}
+
+@layer components {
+  .card {
+    @apply w-[400px] h-fit overflow-hidden mt-1 p-1 rounded-md;
+  }
+
+  .btn {
+    @apply bg-green hover:bg-lime-500 text-white px-5 py-3 border-solid rounded-[10px];
+  }
+}
